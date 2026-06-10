@@ -55,38 +55,6 @@ controller.anyButton.onEvent(ControllerButtonEvent.Released, function () {
         true
         )
     }
-    if (controller.player4.isPressed(ControllerButton.Up)) {
-        animation.runImageAnimation(
-        mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.Four)),
-        assets.animation`MeguminDerecha`,
-        70,
-        true
-        )
-    }
-    if (controller.player4.isPressed(ControllerButton.Down)) {
-        animation.runImageAnimation(
-        mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.Four)),
-        assets.animation`MeguminDerecha`,
-        70,
-        true
-        )
-    }
-    if (controller.player4.isPressed(ControllerButton.Left)) {
-        animation.runImageAnimation(
-        mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.Four)),
-        assets.animation`MeguminDerecha`,
-        70,
-        true
-        )
-    }
-    if (controller.player4.isPressed(ControllerButton.Right)) {
-        animation.runImageAnimation(
-        mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.Four)),
-        assets.animation`MeguminDerecha`,
-        70,
-        true
-        )
-    }
 })
 mp.onButtonEvent(mp.MultiplayerButton.Left, ControllerButtonEvent.Pressed, function (player2) {
     if (mp.isButtonPressed(mp.playerSelector(mp.PlayerNumber.One), mp.MultiplayerButton.Left)) {
@@ -100,11 +68,8 @@ mp.onButtonEvent(mp.MultiplayerButton.Left, ControllerButtonEvent.Pressed, funct
 })
 mp.onControllerEvent(ControllerEvent.Connected, function (player2) {
     mp.moveWithButtons(mp.playerSelector(mp.PlayerNumber.One))
-    mp.moveWithButtons(mp.playerSelector(mp.PlayerNumber.Two))
-    mp.moveWithButtons(mp.playerSelector(mp.PlayerNumber.Three))
-    mp.moveWithButtons(mp.playerSelector(mp.PlayerNumber.Four))
-    scene.cameraFollowSprite(mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.Four)))
-    mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.Four)).setPosition(74, 56)
+    scene.cameraFollowSprite(mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.One)))
+    mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.One)).setPosition(74, 56)
 })
 mp.onButtonEvent(mp.MultiplayerButton.A, ControllerButtonEvent.Pressed, function (player2) {
     if (mp.isButtonPressed(mp.playerSelector(mp.PlayerNumber.One), mp.MultiplayerButton.A)) {
