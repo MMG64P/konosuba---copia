@@ -23,9 +23,6 @@ sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Player, function (sprite, ot
 })
 controller.anyButton.onEvent(ControllerButtonEvent.Released, function () {
     animation.stopAnimation(animation.AnimationTypes.All, mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.One)))
-    animation.stopAnimation(animation.AnimationTypes.All, mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.Two)))
-    animation.stopAnimation(animation.AnimationTypes.All, mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.Three)))
-    animation.stopAnimation(animation.AnimationTypes.All, mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.Four)))
     if (controller.player1.isPressed(ControllerButton.Up)) {
         animation.runImageAnimation(
         mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.One)),
@@ -58,66 +55,34 @@ controller.anyButton.onEvent(ControllerButtonEvent.Released, function () {
         true
         )
     }
-    if (controller.player2.isPressed(ControllerButton.Up)) {
+    if (controller.player4.isPressed(ControllerButton.Up)) {
         animation.runImageAnimation(
-        mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.Two)),
-        assets.animation`AquaDetras`,
-        50,
-        true
-        )
-    }
-    if (controller.player2.isPressed(ControllerButton.Down)) {
-        animation.runImageAnimation(
-        mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.Two)),
-        assets.animation`AquaDelante`,
+        mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.Four)),
+        assets.animation`MeguminDerecha`,
         70,
         true
         )
     }
-    if (controller.player2.isPressed(ControllerButton.Left)) {
+    if (controller.player4.isPressed(ControllerButton.Down)) {
         animation.runImageAnimation(
-        mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.Two)),
-        assets.animation`AquaIzquierda`,
+        mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.Four)),
+        assets.animation`MeguminDerecha`,
         70,
         true
         )
     }
-    if (controller.player2.isPressed(ControllerButton.Right)) {
+    if (controller.player4.isPressed(ControllerButton.Left)) {
         animation.runImageAnimation(
-        mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.Two)),
-        assets.animation`AquaDerecha`,
+        mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.Four)),
+        assets.animation`MeguminDerecha`,
         70,
         true
         )
     }
-    if (controller.player3.isPressed(ControllerButton.Up)) {
+    if (controller.player4.isPressed(ControllerButton.Right)) {
         animation.runImageAnimation(
-        mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.Three)),
-        assets.animation`DarknesDetras`,
-        70,
-        true
-        )
-    }
-    if (controller.player3.isPressed(ControllerButton.Down)) {
-        animation.runImageAnimation(
-        mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.Three)),
-        assets.animation`DarknesDelante`,
-        70,
-        true
-        )
-    }
-    if (controller.player3.isPressed(ControllerButton.Left)) {
-        animation.runImageAnimation(
-        mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.Three)),
-        assets.animation`myAnim0`,
-        70,
-        true
-        )
-    }
-    if (controller.player3.isPressed(ControllerButton.Right)) {
-        animation.runImageAnimation(
-        mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.Three)),
-        assets.animation`myAnim`,
+        mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.Four)),
+        assets.animation`MeguminDerecha`,
         70,
         true
         )
