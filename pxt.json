@@ -1,0 +1,48 @@
+{
+    "name": "konosuba - Copia",
+    "description": "",
+    "dependencies": {
+        "device": "*",
+        "multiplayer": "*"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md",
+        "assets.json",
+        "main.py",
+        "tilemap.g.jres",
+        "tilemap.g.ts",
+        "images.g.jres",
+        "images.g.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "4.0.14",
+        "targetId": "arcade"
+    },
+    "supportedTargets": [
+        "arcade"
+    ],
+    "preferredEditor": "blocksprj",
+    "palette": [
+        "#000000",
+        "#F3E1C9",
+        "#FF0000",
+        "#B80000",
+        "#FFBB00",
+        "#0079D6",
+        "#46B6FB",
+        "#3E7F87",
+        "#FFFFFF",
+        "#906653",
+        "#71514E",
+        "#FDD179",
+        "#7BECCB",
+        "#9FD17D",
+        "#73737E",
+        "#000000"
+    ]
+}
